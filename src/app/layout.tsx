@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans, Poppins } from "next/font/google";
 import { type Metadata } from "next";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/Footer";
@@ -10,8 +10,19 @@ import Navbar from "@/components/Navbar";
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-jakarta",
-
   weight: ["400", "700"],
+});
+
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-poppins",
+});
+
+const inter = Inter({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -27,9 +38,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${GeistSans.variable} ${plusJakartaSans.variable}`}
+      className={`${GeistSans.variable} ${plusJakartaSans.variable} ${poppins.variable} ${inter.variable}`}
     >
-      <body className="font-sans">
+      <body className="font-sans max-w-7xl mx-auto">
         <Navbar />
         <Toaster position="top-right" reverseOrder={false} />
         {children}

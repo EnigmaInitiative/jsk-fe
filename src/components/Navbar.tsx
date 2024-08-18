@@ -55,7 +55,7 @@ const Navbar = () => {
       className="flex h-full min-h-[10vh] flex-row items-center justify-between border-b-[1px]"
       ref={divRef}
     >
-      <div className="flex h-full w-full flex-row items-center p-4">
+      <div className="flex h-full w-full flex-row items-center p-4 justify-between">
         <a href="/">
           <Image
             src={logo}
@@ -81,7 +81,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      {!showHamburger ? (
+      {/* {!showHamburger ? (
         <Link href={"/contact"}>
           <div className="from-gradient-color-1 to-gradient-color-2 font-poppins flex w-fit min-w-[250px] items-center justify-center bg-gradient-to-r p-[4vh] font-medium uppercase tracking-widest text-black transition-all duration-[400ms] ease-in-out hover:cursor-pointer hover:brightness-90">
             Contact Us
@@ -91,7 +91,7 @@ const Navbar = () => {
         <div className="flex w-fit items-center justify-center p-8 uppercase hover:cursor-pointer">
           <Menu onClick={toggleMenu} />
         </div>
-      )}
+      )} */}
       <AnimatePresence>
         {showMenu && (
           <motion.div

@@ -55,7 +55,7 @@ const NavbarButton: React.FC<NavbarButtonProps> = (props) => {
           animate={{ width: isHovered ? "100%" : "0" }}
           transition={{ duration: 0.4 }}
         ></motion.div>
-        {shouldDisplayPopup && props.popup && props.popup[0].title !== "" && (
+        {shouldDisplayPopup && props.popup && props.popup[0]!.title !== "" && (
           <motion.div
             className='fixed z-[100] text-white bg-secondary-color hover:cursor-default p-4 -mx-8 '
             style={{ top: props.height }}

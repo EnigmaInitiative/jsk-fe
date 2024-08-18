@@ -50,13 +50,14 @@ const ContactRequestSchema = z.object({
 
 export async function POST(request: Request) {
   try {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const inputData = await request.json();
     const parsedData = ContactRequestSchema.parse(inputData);
     const { name, email, phone, subject, message } = parsedData;
 
     const ip =
-      request.headers.get("x-real-ip") ||
-      request.headers.get("x-forwarded-for") ||
+      request.headers.get("x-real-ip") ??
+      request.headers.get("x-forwarded-for") ??
       request.headers.get("remote-addr");
 
     if (!ip) {
@@ -74,12 +75,12 @@ export async function POST(request: Request) {
     }
 
     const transporter = nodemailer.createTransport({
-      host: process.env.EMAIL_HOST,
-      port: parseInt(process.env.EMAIL_PORT as string),
+      host: process.env.EMAIL_HOST!,
+      port: parseInt(process.env.EMAIL_PORT!),
       secure: process.env.EMAIL_SECURE === "true",
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_TECH_PASSWORD,
+        user: process.env.EMAIL_USER!,
+        pass: process.env.EMAIL_TECH_PASSWORD!,
       },
     });
 
@@ -89,22 +90,22 @@ export async function POST(request: Request) {
       subject: subject,
       replyTo: email,
       html: `
-          <!doctype html>
-          <html>
-            
-          </html>
+        <!doctype html>
+        <html>
+          <!-- Your HTML content here -->
+        </html>
       `,
     };
 
     await transporter.sendMail(mailOptions);
 
     const acknowledgementTransporter = nodemailer.createTransport({
-      host: process.env.EMAIL_HOST,
-      port: parseInt(process.env.EMAIL_PORT as string),
+      host: process.env.EMAIL_HOST!,
+      port: parseInt(process.env.EMAIL_PORT!),
       secure: process.env.EMAIL_SECURE === "true",
       auth: {
-        user: process.env.EMAIL_CONTACT,
-        pass: process.env.EMAIL_CONTACT_PASSWORD,
+        user: process.env.EMAIL_CONTACT!,
+        pass: process.env.EMAIL_CONTACT_PASSWORD!,
       },
     });
 
@@ -113,12 +114,11 @@ export async function POST(request: Request) {
       to: email,
       subject: "Contact Request Received!",
       html: `
-            <!doctype html>
-            <html>
-
-                
-            </html>
-        `,
+        <!doctype html>
+        <html>
+          <!-- Your acknowledgement HTML content here -->
+        </html>
+      `,
     };
 
     await acknowledgementTransporter.sendMail(acknowledgementOptions);
@@ -127,7 +127,7 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error(error);
     return NextResponse.json(
-      { message: "Error sending email", error: error },
+      { message: "Error sending email", error },
       { status: 422 },
     );
   }

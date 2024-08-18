@@ -24,6 +24,12 @@ const config = {
         inter: ["var(--font-inter)"],
       },
       colors: {
+        "primary-color": "#FFFFFF",
+        "secondary-color": "#000000",
+        "accent-color": "#387000BF",
+        "gradient-color-1": "#44EB98",
+        "gradient-color-2": "#46B83D",
+        "background-color": "#F8F8F8",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -5,6 +5,6 @@ export const general_data = {
     2: "Saturday: 9 AM - 4 PM",
     3: "Sunday: Closed",
   },
-  email: "contact@fincheckaccounting.com",
-  phone: "+971 58 515 7800",
+  email: "contact@website.com",
+  phone: "+971 00 000 000",
 };

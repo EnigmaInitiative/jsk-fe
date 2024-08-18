@@ -42,11 +42,11 @@ const Contact = () => {
 
   const handleSubmit = async () => {
     const data = {
-      name: nameRef.current?.value || "",
-      email: emailRef.current?.value || "",
-      phone: phoneRef.current?.value || "",
-      subject: subRef.current?.value || "",
-      message: msgRef.current?.value || "",
+      name: nameRef.current?.value ?? "",
+      email: emailRef.current?.value ?? "",
+      phone: phoneRef.current?.value ?? "",
+      subject: subRef.current?.value ?? "",
+      message: msgRef.current?.value ?? "",
     };
     toast.loading("Loading...");
     try {

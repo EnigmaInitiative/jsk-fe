@@ -30,6 +30,8 @@ const config = {
         "gradient-color-1": "#44EB98",
         "gradient-color-2": "#46B83D",
         "background-color": "#F8F8F8",
+        "jsk-blue": "#372E97",
+        "jsk-blue-2": "#0D062D",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -63,7 +65,6 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "jsk-blue": "#372E97",
       },
       borderRadius: {
         lg: "var(--radius)",

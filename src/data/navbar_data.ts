@@ -10,8 +10,8 @@ export const navbar_data = [
     ],
   },
   {
-    title: "Accounting",
-    redirect: "/accounting",
+    title: "About Us",
+    redirect: "/about-us",
     popup: [
       {
         title: "",
@@ -20,8 +20,8 @@ export const navbar_data = [
     ],
   },
   {
-    title: "Corporate Tax",
-    redirect: "/tax-corporate",
+    title: "Invest",
+    redirect: "/invest",
     popup: [
       {
         title: "",
@@ -30,26 +30,12 @@ export const navbar_data = [
     ],
   },
   {
-    title: "VAT",
-    redirect: "/tax-vat",
-    popup: [
-      {
-        title: "",
-        redirect: "",
-      },
-    ],
-  },
-  {
-    title: "Company Services",
+    title: "Contact Us",
     redirect: "",
     popup: [
       {
-        title: "Company Incorporation",
-        redirect: "/company-incorporation",
-      },
-      {
-        title: "Company Liquidation",
-        redirect: "/company-liquidation",
+        title: "",
+        redirect: "",
       },
     ],
   },

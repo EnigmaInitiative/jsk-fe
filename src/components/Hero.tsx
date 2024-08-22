@@ -3,7 +3,7 @@ import { dummyData } from "@/data/hero_data";
 
 export default function Hero() {
   return (
-    <div className="flex justify-center items-center h-screen md:mb-24 mt-24 md:mt-0">
+    <div className=" flex h-auto items-center justify-center p-4 md:mb-24 md:mt-0 md:h-screen">
       <HeroCard
         title={dummyData.title}
         description={dummyData.description}

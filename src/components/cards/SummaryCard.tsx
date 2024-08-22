@@ -29,7 +29,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({
       </div>
 
       <div className="w-full md:w-1/2 p-8">
-        <h2 className=" text-3xl md:text-5xl font-bold mb-4">{title}</h2>
+        <h2 className="text-3xl md:text-5xl font-bold mb-4">{title}</h2>
         <p className="text-lg text-gray-600 mb-6">{description}</p>
         <button className="bg-[#372E97] text-white px-6 py-2 rounded-full border-2 border-[#372E97] shadow hover:bg-white hover:text-[#372E97] transition duration-300">
           {buttonText}

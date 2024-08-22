@@ -10,8 +10,8 @@ export const navbar_data = [
     ],
   },
   {
-    title: "About Us",
-    redirect: "/about-us",
+    title: "Aggressive Portfolio",
+    redirect: "/aggressive-portfolio",
     popup: [
       {
         title: "",
@@ -20,8 +20,8 @@ export const navbar_data = [
     ],
   },
   {
-    title: "Invest",
-    redirect: "/invest",
+    title: "Conservative Portfolio",
+    redirect: "/conservative-portfolio",
     popup: [
       {
         title: "",
@@ -30,8 +30,8 @@ export const navbar_data = [
     ],
   },
   {
-    title: "Contact Us",
-    redirect: "",
+    title: "Moderate Portfolio",
+    redirect: "/moderate-portfolio",
     popup: [
       {
         title: "",

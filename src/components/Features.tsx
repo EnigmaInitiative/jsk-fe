@@ -12,7 +12,7 @@ import arrowblue from "@/assets/icons/Arrowblue.svg";
 const Features: React.FC = () => {
   const icons = [icon, icon2, icon3, icon4, icon5];
   return (
-    <div className="min-h-screen mb-24">
+    <div className="min-h-screen md:mb-24">
       <header className="bg-white py-8">
         <div className="container mx-auto flex flex-col items-start justify-between px-4 lg:flex-row">
           <div className="lg:w-1/3">

@@ -22,7 +22,7 @@ const MobileNavButton: React.FC<MobileNavButtonProps> = (props) => {
     <Link href={props.redirect}>
       <div className='hover:cursor-pointer w-fit text-[32px]'>
         <div
-          className='font-dms text-[#d2d3d5d9] hover:text-white transition-all duration-[400ms] ease-in-out hover:ml-2'
+          className='font-dms text-black hover:text-black/80 transition-all duration-[400ms] ease-in-out hover:ml-2'
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >

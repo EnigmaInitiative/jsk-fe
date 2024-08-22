@@ -24,14 +24,14 @@ export const HeroCard: React.FC<HeroCard> = ({
         </button>
       </div>
 
-      <div className="w-full md:w-1/2 h-64 md:h-full flex justify-center items-center">
+      <div className="w-full md:w-1/2 h-64 md:h-full flex justify-center items-center mt-10">
         <div className="bg-gray-300 rounded-lg w-full h-full flex justify-center items-center">
           <Image
             src={imageSrc}
             height={1000}
             width={1000}
             alt="Hero"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-2xl"
           />
         </div>
       </div>

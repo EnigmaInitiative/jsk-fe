@@ -1,16 +1,14 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import logo from "@/../public/favicon.png";
+import logo from "@/../../public/favicon.png";
 import { navbar_data } from "../data/navbar_data";
 import { Menu, X } from "lucide-react";
 import { useShowHamburgerStore } from "@/store/store";
-
-import { AnimatePresence, motion } from "framer-motion";
-
-import Link from "next/link";
-import MobileNavButton from "./ui/MobileNavButton";
 import NavbarButton from "./ui/NavbarButton";
+import { AnimatePresence, motion } from "framer-motion";
+import MobileNavButton from "./ui/MobileNavButton";
+import Link from "next/link";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -55,11 +53,11 @@ const Navbar = () => {
       className="flex h-full min-h-[10vh] flex-row items-center justify-between border-b-[1px]"
       ref={divRef}
     >
-      <div className="flex h-full w-full flex-row items-center p-4 justify-between">
+      <div className="flex h-full w-full flex-row items-center justify-between p-4">
         <a href="/">
           <Image
-            src={logo}
-            className="ml-6 h-[50px] w-auto lg:ml-28"
+            src={logo as HTMLImageElement}
+            className="h-[50px] w-auto"
             alt="Logo"
             height={0}
             width={0}
@@ -81,21 +79,15 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      {/* {!showHamburger ? (
-        <Link href={"/contact"}>
-          <div className="from-gradient-color-1 to-gradient-color-2 font-poppins flex w-fit min-w-[250px] items-center justify-center bg-gradient-to-r p-[4vh] font-medium uppercase tracking-widest text-black transition-all duration-[400ms] ease-in-out hover:cursor-pointer hover:brightness-90">
-            Contact Us
-          </div>
-        </Link>
-      ) : (
+      {showHamburger && (
         <div className="flex w-fit items-center justify-center p-8 uppercase hover:cursor-pointer">
           <Menu onClick={toggleMenu} />
         </div>
-      )} */}
+      )}
       <AnimatePresence>
         {showMenu && (
           <motion.div
-            className="fixed top-0 z-[101] flex h-screen w-screen origin-top flex-col bg-black"
+            className="fixed top-0 z-[101] flex h-screen w-screen origin-top flex-col bg-white"
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1 }}
             transition={{ duration: 0.4 }}
@@ -104,13 +96,13 @@ const Navbar = () => {
           >
             <div className="flex flex-row items-center justify-between">
               <Image
-                src={logo}
+                src={logo as HTMLImageElement}
                 className="ml-10 h-[50px] w-auto"
                 alt="Logo"
                 height={0}
                 width={0}
               />
-              <div className="flex w-fit p-8 uppercase text-white transition-all duration-[400ms] ease-in-out hover:rotate-90 hover:cursor-pointer hover:brightness-90">
+              <div className="duration-[400ms] flex w-fit p-8 uppercase text-black transition-all ease-in-out hover:rotate-90 hover:cursor-pointer hover:brightness-90">
                 <X onClick={toggleMenu} />
               </div>
             </div>

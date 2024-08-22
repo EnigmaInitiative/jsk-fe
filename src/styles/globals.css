@@ -70,10 +70,12 @@
 
 ::-webkit-scrollbar {
   width: 8px;
+  height: 5px;
   /* Width of the scrollbar */
 }
 ::-webkit-scrollbar:hover {
   width: 10px;
+  height: 5px;
   /* Width of the scrollbar */
 }
 

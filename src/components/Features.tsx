@@ -22,7 +22,7 @@ const Features: React.FC = () => {
           </div>
           <div className="mt-6 text-left lg:mt-0 lg:w-1/2">
             <p className="mb-4 text-lg text-gray-600">
-             {featuresHeading.description}
+              {featuresHeading.description}
             </p>
             <button className="rounded-full border-2 border-[#372E97] px-6 py-3 font-semibold text-[#372E97] transition hover:bg-[#372E97] hover:text-white">
               Contact Us
@@ -31,7 +31,7 @@ const Features: React.FC = () => {
         </div>
       </header>
 
-      <main className="container mx-auto grid grid-cols-1 gap-6 px-4 py-12 md:grid-cols-2 lg:grid-cols-3">
+      <main className="container mx-auto grid grid-cols-1 gap-6 px-4 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
         {services.map((service, index) => (
           <ServiceCard
             key={index}
@@ -41,7 +41,7 @@ const Features: React.FC = () => {
             bgColor={service.bgColor}
             textColor={service.textColor}
             double={service.double}
-            maxwidth={service.maxwidth}
+            maxwidth={""}
             arrow={index === 0 ? (arrowwhite as string) : (arrowblue as string)}
           />
         ))}

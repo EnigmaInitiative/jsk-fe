@@ -31,9 +31,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           viewBox="0 0 63 26"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <path d="M0.999634 13H58.9996" />
           <path d="M48.6621 1.78369L61 13L48.6621 24.2162" />

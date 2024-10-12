@@ -20,7 +20,7 @@ const MobileNavButton: React.FC<MobileNavButtonProps> = (props) => {
 
   return (
     <Link href={props.redirect}>
-      <div className='hover:cursor-pointer w-fit text-[32px]'>
+      <div className='hover:cursor-pointer w-fit text-2xl'>
         <div
           className='font-dms text-black hover:text-black/80 transition-all duration-[400ms] ease-in-out hover:ml-2'
           onMouseEnter={handleMouseEnter}

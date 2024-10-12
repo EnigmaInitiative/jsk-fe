@@ -106,7 +106,7 @@ const Navbar = () => {
                 <X onClick={toggleMenu} />
               </div>
             </div>
-            <div className="m-10 text-white">
+            <div className="m-10 overflow-auto text-white">
               {navbar_data.map((item, i) => (
                 <div key={i}>
                   {item.popup.map((subItem, j) => {

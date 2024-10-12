@@ -39,7 +39,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [setShowHamburger]);
 
   useEffect(() => {
     if (divRef.current) {

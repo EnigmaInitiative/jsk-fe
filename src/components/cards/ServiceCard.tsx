@@ -1,58 +1,47 @@
 import React from "react";
-import Image from "next/image";
+import Link from "next/link";
+import { type LucideIcon } from "lucide-react";
 
 interface ServiceCardProps {
   title: string;
   description: string;
-  iconPath: string;
-  bgColor: string;
-  textColor: string;
-  double?: boolean;
-  maxwidth?: string;
-  arrow: string;
-  className?:string;
+  icon: LucideIcon;
+  className?: string;
+  redirect: string;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
-  iconPath,
-  bgColor,
-  textColor,
-  double = false,
-  maxwidth = "16rem",
-  arrow,
+  icon: Icon,
   className,
+  redirect,
 }) => {
   return (
-    <div
-      className={`rounded-lg p-6 shadow-md ${bgColor} flex flex-col transform transition-transform hover:scale-105  ${className} ${
-        double ? "md:col-span-2" : ""
-      }`}
+    <Link
+      href={redirect}
+      className={`flex w-full transform flex-col rounded-lg bg-[#FAFAFA] p-6 text-gray-900 shadow-md transition-transform hover:scale-105 ${className} grow cursor-pointer hover:bg-[#372E97] hover:text-white md:w-1/4`}
     >
       <div className="flex items-center justify-between">
-        <Image
-          src={iconPath}
-          alt={title}
-          width={100}
-          height={100}
-          className="h-14 w-14 object-contain"
-        />
-        <Image
-          src={arrow}
-          alt="arrow"
-          width={60}
-          height={60}
-          className="w-10 h-10 md:w-12 md:h-12"
-        />
+        <Icon size={36} />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="63"
+          height="26"
+          viewBox="0 0 63 26"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M0.999634 13H58.9996" />
+          <path d="M48.6621 1.78369L61 13L48.6621 24.2162" />
+        </svg>
       </div>
-      <h3
-        className={`mt-4 text-2xl font-semibold ${textColor} ${maxwidth} truncate`}
-      >
-        {title}
-      </h3>
-      <p className={`mt-2 text-lg ${textColor}`}>{description}</p>
-    </div>
+      <h3 className={`mt-4 truncate text-2xl font-semibold`}>{title}</h3>
+      <p className={`mt-2 text-lg`}>{description}</p>
+    </Link>
   );
 };
 

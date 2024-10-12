@@ -1,16 +1,8 @@
 import React from "react";
 import ServiceCard from "./cards/ServiceCard";
 import { services, featuresHeading } from "@/data/features_data";
-import icon from "@/assets/icons/profile-tick.svg";
-import icon2 from "@/assets/icons/convert-card.svg";
-import icon3 from "@/assets/icons/security-safe.svg";
-import icon4 from "@/assets/icons/presention-chart.svg";
-import icon5 from "@/assets/icons/coin.svg";
-import arrowwhite from "@/assets/icons/Arrow.svg";
-import arrowblue from "@/assets/icons/Arrowblue.svg";
 
 const Features: React.FC = () => {
-  const icons = [icon, icon2, icon3, icon4, icon5];
   return (
     <div className="min-h-screen md:mb-24">
       <header className="bg-white py-8">
@@ -31,18 +23,16 @@ const Features: React.FC = () => {
         </div>
       </header>
 
-      <main className="container mx-auto grid grid-cols-1 gap-6 px-4 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
+      {/* <main className="container mx-auto grid grid-cols-1 gap-6 px-4 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"> */}
+      <main className="container mx-auto flex flex-wrap gap-6 px-4 py-12">
         {services.map((service, index) => (
           <ServiceCard
             key={index}
             title={service.title}
             description={service.description}
-            iconPath={icons[index] as string}
-            bgColor={service.bgColor}
-            textColor={service.textColor}
-            double={service.double}
-            maxwidth={""}
-            arrow={index === 0 ? (arrowwhite as string) : (arrowblue as string)}
+            icon={service.icon}
+            redirect={service.redirect}
+            className="[&:nth-child(3n+1)]:md:w-1/2"
           />
         ))}
       </main>

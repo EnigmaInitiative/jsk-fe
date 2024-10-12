@@ -10,32 +10,54 @@ export const navbar_data = [
     ],
   },
   {
-    title: "Aggressive Portfolio",
-    redirect: "/aggressive-portfolio",
+    title: "Investment Portfolios",
+    redirect: "",
     popup: [
       {
-        title: "",
-        redirect: "",
+        title: "Aggressive Portfolio",
+        redirect: "/aggressive-portfolio",
+      },
+      {
+        title: "Conservative Portfolio",
+        redirect: "/conservative-portfolio",
+      },
+      {
+        title: "Moderate Portfolio",
+        redirect: "/moderate-portfolio",
       },
     ],
   },
   {
-    title: "Conservative Portfolio",
-    redirect: "/conservative-portfolio",
+    title: "Services",
+    redirect: "",
     popup: [
       {
-        title: "",
-        redirect: "",
+        title: "Acounting and Taxation",
+        redirect: "/accounting-taxation",
       },
-    ],
-  },
-  {
-    title: "Moderate Portfolio",
-    redirect: "/moderate-portfolio",
-    popup: [
       {
-        title: "",
-        redirect: "",
+        title: "Banking and Financial Services",
+        redirect: "/banking-financial-services",
+      },
+      {
+        title: "Business Setup and Licensing",
+        redirect: "/business-setup-licensing",
+      },
+      {
+        title: "Corporate Advisory",
+        redirect: "/corporate-advisory",
+      },
+      {
+        title: "Estate Planning",
+        redirect: "/estate-planning",
+      },
+      {
+        title: "Golden Visa",
+        redirect: "/golden-visa",
+      },
+      {
+        title: "Rentals and Resale Property",
+        redirect: "/rental-resale-property",
       },
     ],
   },

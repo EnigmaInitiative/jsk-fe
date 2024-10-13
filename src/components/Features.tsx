@@ -17,7 +17,7 @@ const Features: React.FC = () => {
               {featuresHeading.description}
             </p>
             <button className="rounded-full border-2 border-[#372E97] px-6 py-3 font-semibold text-[#372E97] transition hover:bg-[#372E97] hover:text-white">
-              Contact Us
+              <a href="#contact">Contact Us</a>
             </button>
           </div>
         </div>

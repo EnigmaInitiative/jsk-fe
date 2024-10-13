@@ -1,20 +1,9 @@
 "use client";
-import React, { useRef, useState } from "react";
-import axios, { AxiosError } from "axios";
-
-import {
-  Info,
-  LucidePencil,
-  Mail,
-  PhoneCallIcon,
-  Send,
-  User,
-} from "lucide-react";
+import React, { useRef } from "react";
+import axios, { type AxiosError } from "axios";
 
 import toast from "react-hot-toast";
-import { general_data } from "@/data/general_data";
 import InputBox from "./ui/InputBox";
-import Socials from "./ui/Socials";
 import CustomButton1 from "./ui/CustomButton1";
 import Heading from "./ui/Heading";
 import SubHeading from "./ui/SubHeading";
@@ -31,9 +20,6 @@ interface ErrorResponse {
 }
 
 const Contact = () => {
-  const headingRef = useRef<HTMLDivElement>(null);
-  const [isInViewport, setIsInViewport] = useState(false);
-
   const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const phoneRef = useRef<HTMLInputElement>(null);
@@ -76,14 +62,17 @@ const Contact = () => {
 
   return (
     <>
-      <div className="rounded-t-[50px] bg-[#F9FAFB] p-8 lg:min-h-[60vh] h-fit">
-        <div className="my-12 flex flex-grow flex-col h-fit">
+      <div
+        id="contact"
+        className="h-fit rounded-t-[50px] bg-[#F9FAFB] p-8 lg:min-h-[60vh]"
+      >
+        <div className="my-12 flex h-fit flex-grow flex-col">
           <Heading>Navigating Your Investment Journey with Confidence.</Heading>
           <SubHeading>
             Curious about how to kickstart your investment journey? Contact us
             today
           </SubHeading>
-          <div className="flex h-full flex-grow flex-col items-center  lg:flex-row">
+          <div className="flex h-full flex-grow flex-col items-center lg:flex-row">
             <div className="mx-auto flex w-full max-w-xl flex-col gap-8">
               <div className="mt-8">
                 <InputBox label={"Name"} ref={nameRef} />

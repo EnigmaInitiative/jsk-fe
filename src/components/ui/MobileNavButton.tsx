@@ -5,6 +5,7 @@ import React, { useState } from "react";
 interface MobileNavButtonProps {
   title: string | JSX.Element;
   redirect: string;
+  className?: string;
 }
 
 const MobileNavButton: React.FC<MobileNavButtonProps> = (props) => {
@@ -20,16 +21,16 @@ const MobileNavButton: React.FC<MobileNavButtonProps> = (props) => {
 
   return (
     <Link href={props.redirect}>
-      <div className='hover:cursor-pointer w-fit text-2xl'>
+      <div className="w-fit text-2xl hover:cursor-pointer">
         <div
-          className='font-dms text-black hover:text-black/80 transition-all duration-[400ms] ease-in-out hover:ml-2'
+          className={`font-dms duration-[400ms] text-black transition-all ease-in-out hover:ml-2 hover:text-black/80 ${props.className}`}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           {props.title}
         </div>
         <div
-          className='bottom-0 left-0 w-0 h-[2px] bg-white transition-all ease-in-out duration-[400ms]'
+          className="duration-[400ms] bottom-0 left-0 h-[2px] w-0 bg-white transition-all ease-in-out"
           style={{
             width: isHovered ? "100%" : "0",
             marginLeft: isHovered ? "8px" : "0",

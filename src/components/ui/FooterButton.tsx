@@ -4,6 +4,7 @@ import React, { useState } from "react";
 interface FooterButtonProps {
   title: string;
   redirect: string;
+  className?: string;
 }
 
 const FooterButton: React.FC<FooterButtonProps> = (props) => {
@@ -19,16 +20,16 @@ const FooterButton: React.FC<FooterButtonProps> = (props) => {
 
   return (
     <a href={props.redirect}>
-      <div className='hover:cursor-pointer w-fit'>
+      <div className="w-fit hover:cursor-pointer">
         <div
-          className=' font-dms'
+          className={`font-inter ${props.className}`}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           {props.title}
         </div>
         <div
-          className='bottom-0 left-0 w-0 h-[2px] bg-white transition-all ease-in-out duration-[400ms]'
+          className={`duration-[400ms] bottom-0 left-0 h-[2px] w-0 bg-black transition-all ease-in-out`}
           style={{ width: isHovered ? "100%" : "0" }}
         ></div>
       </div>

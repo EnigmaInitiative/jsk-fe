@@ -8,7 +8,6 @@ import { useShowHamburgerStore } from "@/store/store";
 import NavbarButton from "./ui/NavbarButton";
 import { AnimatePresence, motion } from "framer-motion";
 import MobileNavButton from "./ui/MobileNavButton";
-import Link from "next/link";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -109,46 +108,52 @@ const Navbar = () => {
             <div className="m-10 overflow-auto text-white">
               {navbar_data.map((item, i) => (
                 <div key={i}>
-                  {item.popup.map((subItem, j) => {
-                    const delay = i * 0.1 + j * 0.05;
-                    return subItem.title === "" ? (
-                      <motion.div
-                        key={j - i}
-                        initial={{ x: -500, opacity: 0 }}
-                        animate={{
-                          x: startTextAnimation ? 0 : -500,
-                          opacity: startTextAnimation ? 1 : 0,
-                        }}
-                        exit={{ x: -500, opacity: 0 }}
-                        transition={{ duration: 0.4, delay }}
-                        className="my-2"
-                        onClick={toggleMenu}
-                      >
-                        <MobileNavButton
-                          title={item.title}
-                          redirect={item.redirect}
-                        />
-                      </motion.div>
-                    ) : (
-                      <motion.div
-                        key={j - i}
-                        initial={{ x: -500, opacity: 0 }}
-                        animate={{
-                          x: startTextAnimation ? 0 : -500,
-                          opacity: startTextAnimation ? 1 : 0,
-                        }}
-                        exit={{ x: -500, opacity: 0 }}
-                        transition={{ duration: 0.4, delay }}
-                        className="my-2"
-                        onClick={toggleMenu}
-                      >
-                        <MobileNavButton
-                          title={subItem.title}
-                          redirect={subItem.redirect}
-                        />
-                      </motion.div>
-                    );
-                  })}
+                  <motion.div
+                    key={i}
+                    initial={{ x: -500, opacity: 0 }}
+                    animate={{
+                      x: startTextAnimation ? 0 : -500,
+                      opacity: startTextAnimation ? 1 : 0,
+                    }}
+                    exit={{ x: -500, opacity: 0 }}
+                    transition={{ duration: 0.4, delay: i * 0.1 }}
+                    className="my-2"
+                    onClick={toggleMenu}
+                  >
+                    <MobileNavButton
+                      title={item.title}
+                      redirect={item.redirect}
+                    />
+                    {item.popup[0]?.title !== "" &&
+                      item.popup.map((subItem, j) => (
+                        <motion.div
+                          key={`${i}-${j}`}
+                          initial={{ height: 0 }}
+                          animate={{ height: "auto" }}
+                        >
+                          <motion.div
+                            initial={{ x: -500, opacity: 0 }}
+                            animate={{
+                              x: startTextAnimation ? 0 : -500,
+                              opacity: startTextAnimation ? 1 : 0,
+                            }}
+                            exit={{ x: -500, opacity: 0 }}
+                            transition={{
+                              duration: 0.4,
+                              delay: i * 0.1 + j * 0.05,
+                            }}
+                            className="ml-4"
+                            onClick={toggleMenu}
+                          >
+                            <MobileNavButton
+                              title={subItem.title}
+                              redirect={subItem.redirect}
+                              className="text-lg"
+                            />
+                          </motion.div>
+                        </motion.div>
+                      ))}
+                  </motion.div>
                 </div>
               ))}
             </div>

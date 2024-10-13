@@ -6,8 +6,8 @@ import { navbar_data } from "@/data/navbar_data";
 import FooterButton from "./ui/FooterButton";
 const Footer = () => {
   return (
-    <div className="text-jsk-blue-2 mx-8 my-4 font-jakarta">
-      <div className="flex flex-col justify-between gap-8 md:flex-row md:gap-16 mt-8">
+    <div className="mx-8 my-4 font-jakarta text-jsk-blue-2">
+      <div className="mt-8 flex flex-col justify-between gap-8 md:flex-row md:gap-16">
         <div className="flex flex-col gap-4">
           <Image
             src={logo as HTMLImageElement}
@@ -22,31 +22,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <p className="mb-4 font-[700]">Pages</p>
-          <div className="flex flex-col gap-2">
-            {navbar_data.map((item, i) => (
-              <div key={i} className="flex flex-col gap-2">
-                {item.popup.map((subItem, j) => {
-                  return subItem.title == "" ? (
-                    <FooterButton
-                      key={j - i}
-                      title={item.title}
-                      redirect={item.redirect}
-                    />
-                  ) : (
-                    <FooterButton
-                      key={j - i}
-                      title={subItem.title}
-                      redirect={subItem.redirect}
-                    />
-                  );
-                })}
-              </div>
-            ))}
-          </div>
-        </div>
-        <div>
-          <p className="mb-4 font-[700]">Contact Us</p>
+          <p className="mb-4 text-lg font-[700]">Contact Us</p>
           <div className="mb-8">
             <div className="w-full max-w-md">
               <div className="">
@@ -87,8 +63,35 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-4 mt-4">
-        <div className="bg-jsk-blue-2/40 h-[1px] w-full" />
+      <div className="w-full">
+        <p className="mb-4 text-lg font-[700]">Pages</p>
+        <div className="flex gap-8 md:flex-col flex-col sm:flex-row">
+          {navbar_data.map((item, i) => (
+            <div key={i} className="flex grow flex-col gap-2">
+              <FooterButton
+                key={i}
+                title={item.title}
+                redirect={item.redirect}
+                className="font-bold"
+              />
+              {item.popup[0]?.title !== "" && (
+                <div className="flex gap-x-4 flex-col md:flex-row md:flex-wrap">
+                  {item.popup.map((subItem, j) => (
+                    <FooterButton
+                      key={j - i}
+                      title={subItem.title}
+                      redirect={subItem.redirect}
+                      className="text-sm"
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="mt-4 flex flex-col gap-4">
+        <div className="h-[1px] w-full bg-jsk-blue-2/40" />
 
         <p>©2024 JSK® All right reserved.</p>
         <p>

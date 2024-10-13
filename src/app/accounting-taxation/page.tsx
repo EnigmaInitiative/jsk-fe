@@ -2,16 +2,14 @@ import React from "react";
 
 const JSKAssetManagement = () => {
   return (
-    <div className="container mx-auto overflow-x-hidden p-8">
-      <h1 className="mb-6 text-4xl font-bold">
-        Streamline Your Finances, Optimize Your Taxes with JSK Asset Management
-      </h1>
+    <div className="container mx-auto overflow-x-hidden p-8 text-justify">
+      <h1 className="mb-6 text-4xl font-bold">Accounts & Taxation</h1>
 
       <p className="mb-4 text-gray-800">
         In today&apos;s complex financial landscape, having a reliable partner
-        for accounting and taxation is crucial. JSK Asset Management offers
-        comprehensive services designed to keep your finances organized,
-        compliant, and optimized for tax efficiency.
+        for accounting and taxation is crucial. JSK offers comprehensive
+        services designed to keep your finances organized, compliant, and
+        optimized for tax efficiency.
       </p>
 
       <section className="mb-8">
@@ -54,7 +52,6 @@ const JSKAssetManagement = () => {
       </section>
 
       <section className="mb-8">
-
         <h2 className="mb-4 text-2xl font-semibold">Taxation Services</h2>
         <p className="mb-4 text-gray-800">
           Navigate the UAE&apos;s evolving tax landscape with confidence:
@@ -115,7 +112,6 @@ const JSKAssetManagement = () => {
       </section>
 
       <section className="mb-8">
-
         <h2 className="mb-4 text-2xl font-semibold">Customized Reporting</h2>
         <p className="mb-4 text-gray-800">
           We understand that every business has unique reporting needs:
@@ -139,7 +135,6 @@ const JSKAssetManagement = () => {
       </section>
 
       <section className="mb-8">
-
         <h2 className="mb-4 text-2xl font-semibold">Technology Integration</h2>
         <p className="mb-4 text-gray-800">
           Leverage cutting-edge financial technology for enhanced efficiency:
@@ -162,12 +157,12 @@ const JSKAssetManagement = () => {
       </section>
 
       <p className="mb-4 text-gray-800">
-        At JSK Asset Management, we don&apos;t just crunch numbers – we provide
-        strategic financial guidance to help your business thrive. Our team of
-        experienced accountants and tax professionals stays up-to-date with the
-        latest regulations and best practices, ensuring that your finances are
-        not just in order, but optimized for growth and success in the
-        UAE&apos;s dynamic business environment.
+        At JSK, we don&apos;t just crunch numbers - we provide strategic
+        financial guidance to help your business thrive. Our team of experienced
+        accountants and tax professionals stays up-to-date with the latest
+        regulations and best practices, ensuring that your finances are not just
+        in order, but optimized for growth and success in the UAE&apos;s dynamic
+        business environment.
       </p>
     </div>
   );

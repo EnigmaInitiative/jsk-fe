@@ -2,17 +2,14 @@ import React from "react";
 
 const JSKBusinessSetup = () => {
   return (
-    <div className="container mx-auto overflow-x-hidden p-8">
-      <h1 className="mb-6 text-4xl font-bold">
-        Launch Your UAE Business with Confidence: JSK Asset Management&apos;s
-        Business Setup & License Services
-      </h1>
+    <div className="container mx-auto overflow-x-hidden p-8 text-justify">
+      <h1 className="mb-6 text-4xl font-bold">Business Setup & Licensing</h1>
 
       <p className="mb-4 text-gray-800">
         Embarking on a new business venture in the UAE is an exciting
         opportunity, but navigating the regulatory landscape can be complex. JSK
-        Asset Management offers comprehensive business setup and licensing
-        services to ensure a smooth and efficient launch for your enterprise.
+        offers comprehensive business setup and licensing services to ensure a
+        smooth and efficient launch for your enterprise.
       </p>
 
       <section className="mb-8">
@@ -231,12 +228,12 @@ const JSKBusinessSetup = () => {
       </section>
 
       <p className="mb-4 text-gray-800">
-        At JSK Asset Management, we understand that setting up a business is
-        just the beginning of your journey. Our comprehensive services are
-        designed to not only facilitate a smooth setup process but also to
-        provide a strong foundation for your long-term success in the UAE
-        market. With our expert guidance, you can focus on what matters most –
-        growing your business and realizing your entrepreneurial vision.
+        At JSK, we understand that setting up a business is just the beginning
+        of your journey. Our comprehensive services are designed to not only
+        facilitate a smooth setup process but also to provide a strong
+        foundation for your long-term success in the UAE market. With our expert
+        guidance, you can focus on what matters most - growing your business and
+        realizing your entrepreneurial vision.
       </p>
     </div>
   );

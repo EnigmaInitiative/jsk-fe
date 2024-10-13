@@ -2,18 +2,15 @@ import React from "react";
 
 const JSKInvestmentServices = () => {
   return (
-    <div className="container mx-auto overflow-x-hidden p-8">
-      <h1 className="mb-6 text-4xl font-bold">
-        Diversify Your Portfolio, Maximize Your Returns: JSK Asset
-        Management&apos;s Investment Services
-      </h1>
+    <div className="container mx-auto overflow-x-hidden p-8 text-justify">
+      <h1 className="mb-6 text-4xl font-bold">Investment Advisory</h1>
 
       <p className="mb-4 text-gray-800">
         In an ever-changing global financial landscape, a well-diversified
-        investment portfolio is key to long-term financial success. JSK Asset
-        Management offers expert guidance and management across a wide range of
-        asset classes, helping you build a robust investment strategy tailored
-        to your goals and risk tolerance.
+        investment portfolio is key to long-term financial success. JSK offers
+        expert guidance and management across a wide range of asset classes,
+        helping you build a robust investment strategy tailored to your goals
+        and risk tolerance.
       </p>
 
       <section className="mb-8">
@@ -300,8 +297,8 @@ const JSKInvestmentServices = () => {
       </section>
 
       <p className="mb-4 text-gray-800">
-        At JSK Asset Management, we believe that successful investing requires a
-        deep understanding of market dynamics, a clear strategy, and disciplined
+        At JSK, we believe that successful investing requires a deep
+        understanding of market dynamics, a clear strategy, and disciplined
         execution. Our team of experienced investment professionals works
         tirelessly to identify opportunities, manage risks, and optimize returns
         across all asset classes. Whether you&apos;re a conservative investor

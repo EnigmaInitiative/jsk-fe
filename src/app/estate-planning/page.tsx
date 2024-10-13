@@ -2,18 +2,15 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className="container mx-auto overflow-x-hidden p-8">
-      <h1 className="mb-6 text-4xl font-bold">
-        Secure Your Legacy for Generations to Come: JSK Asset Management&apos;s
-        Estate Planning Services
-      </h1>
+    <div className="container mx-auto overflow-x-hidden p-8 text-justify">
+      <h1 className="mb-6 text-4xl font-bold">Estate Planning</h1>
 
       <p className="mb-4 text-gray-800">
         Estate planning is a crucial aspect of comprehensive wealth management,
         ensuring that your assets are protected and distributed according to
-        your wishes. At JSK Asset Management, we offer sophisticated estate
-        planning services tailored to the unique needs of individuals and
-        families in the UAE and beyond.
+        your wishes. At JSK, we offer sophisticated estate planning services
+        tailored to the unique needs of individuals and families in the UAE and
+        beyond.
       </p>
 
       <h2 className="mt-4 text-2xl font-semibold">
@@ -287,7 +284,7 @@ const Page = () => {
         We work closely with your existing advisors:
       </p>
 
-      <ul className="list-inside list-disc mb-6">
+      <ul className="mb-6 list-inside list-disc">
         <li className="ml-4">
           Coordination with attorneys, accountants, and financial advisors
         </li>
@@ -300,12 +297,12 @@ const Page = () => {
       </ul>
 
       <p className="mb-4 text-gray-800">
-        At JSK Asset Management, we understand that estate planning is not just
-        about wealth transfer—it&apos;s about preserving your legacy, protecting
-        your loved ones, and ensuring your values endure for generations. Our
-        team of experienced estate planning professionals combines legal
-        expertise, financial acumen, and a deep understanding of the UAE&apos;s
-        unique landscape to create comprehensive, tailored estate plans. We are
+        At JSK, we understand that estate planning is not just about wealth
+        transfer—it&apos;s about preserving your legacy, protecting your loved
+        ones, and ensuring your values endure for generations. Our team of
+        experienced estate planning professionals combines legal expertise,
+        financial acumen, and a deep understanding of the UAE&apos;s unique
+        landscape to create comprehensive, tailored estate plans. We are
         committed to helping you navigate the complexities of estate planning,
         providing peace of mind that your wishes will be honored and your legacy
         secured.

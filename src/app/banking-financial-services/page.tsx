@@ -2,17 +2,14 @@ import React from "react";
 
 const JSKBankingServices = () => {
   return (
-    <div className="container mx-auto overflow-x-hidden p-8">
-      <h1 className="mb-6 text-4xl font-bold">
-        Comprehensive Financial Solutions for Every Need: JSK Asset
-        Management&apos;s Banking and Financial Services
-      </h1>
+    <div className="container mx-auto overflow-x-hidden p-8 text-justify">
+      <h1 className="mb-6 text-4xl font-bold">Banking & Financial Services</h1>
 
       <p className="mb-4 text-gray-800">
         In today&apos;s complex financial landscape, having a trusted partner to
         navigate the intricacies of banking and financial services is crucial.
-        JSK Asset Management offers a comprehensive suite of solutions designed
-        to meet all your financial needs, whether personal or business-related.
+        JSK offers a comprehensive suite of solutions designed to meet all your
+        financial needs, whether personal or business-related.
       </p>
 
       <section className="mb-8">
@@ -219,14 +216,13 @@ const JSKBankingServices = () => {
       </section>
 
       <p className="mb-4 text-gray-800">
-        At JSK Asset Management, we understand that your financial needs are as
-        unique as your goals. Our team of experienced financial professionals
-        works closely with you to understand your objectives and craft tailored
-        solutions that align with your aspirations. Whether you&apos;re an
-        individual looking to secure your financial future or a business seeking
-        to optimize your financial operations, our comprehensive banking and
-        financial services are designed to support your success in the UAE and
-        beyond.
+        At JSK, we understand that your financial needs are as unique as your
+        goals. Our team of experienced financial professionals works closely
+        with you to understand your objectives and craft tailored solutions that
+        align with your aspirations. Whether you&apos;re an individual looking
+        to secure your financial future or a business seeking to optimize your
+        financial operations, our comprehensive banking and financial services
+        are designed to support your success in the UAE and beyond.
       </p>
     </div>
   );

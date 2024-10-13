@@ -13,7 +13,7 @@ const Features: React.FC = () => {
             </h1>
           </div>
           <div className="mt-6 text-left lg:mt-0 lg:w-1/2">
-            <p className="mb-4 text-lg text-gray-600">
+            <p className="mb-4 text-justify text-lg text-gray-600">
               {featuresHeading.description}
             </p>
             <button className="rounded-full border-2 border-[#372E97] px-6 py-3 font-semibold text-[#372E97] transition hover:bg-[#372E97] hover:text-white">

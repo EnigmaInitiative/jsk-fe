@@ -2,18 +2,15 @@ import React from "react";
 
 const JSKGoldenVisa = () => {
   return (
-    <div className="container mx-auto overflow-x-hidden p-8">
-      <h1 className="mb-6 text-4xl font-bold">
-        Your Gateway to Long-Term UAE Residency: JSK Asset Management&apos;s
-        Golden Visa Services
-      </h1>
+    <div className="container mx-auto overflow-x-hidden p-8 text-justify">
+      <h1 className="mb-6 text-4xl font-bold">Golden Visa</h1>
 
       <p className="mb-4 text-gray-800">
         The UAE Golden Visa program represents an unparalleled opportunity for
         individuals seeking long-term residency in one of the world&apos;s most
-        dynamic and prosperous nations. JSK Asset Management offers
-        comprehensive assistance to help you secure this prestigious status,
-        opening doors to a wealth of benefits and opportunities in the UAE.
+        dynamic and prosperous nations. JSK offers comprehensive assistance to
+        help you secure this prestigious status, opening doors to a wealth of
+        benefits and opportunities in the UAE.
       </p>
 
       <section className="mb-8">
@@ -44,7 +41,7 @@ const JSKGoldenVisa = () => {
         <p className="mb-4 text-gray-800">
           We provide expert guidance on eligibility across various categories:
         </p>
-        <ul className="list-inside list-decimal flex flex-col gap-2">
+        <ul className="flex list-inside list-decimal flex-col gap-2">
           <li className="ml-4">
             <strong>Investors</strong>:
             <ul className="list-inside list-disc">
@@ -103,7 +100,9 @@ const JSKGoldenVisa = () => {
           Our Comprehensive Golden Visa Services
         </h2>
 
-        <h3 className="mt-2 text-xl font-medium">1. Initial Consultation and Eligibility Assessment</h3>
+        <h3 className="mt-2 text-xl font-medium">
+          1. Initial Consultation and Eligibility Assessment
+        </h3>
         <ul className="list-inside list-disc">
           <li className="ml-4">
             In-depth evaluation of your profile against Golden Visa criteria
@@ -116,7 +115,9 @@ const JSKGoldenVisa = () => {
           </li>
         </ul>
 
-        <h3 className="mt-2 text-xl font-medium">2. Documentation Preparation</h3>
+        <h3 className="mt-2 text-xl font-medium">
+          2. Documentation Preparation
+        </h3>
         <ul className="list-inside list-disc">
           <li className="ml-4">
             Comprehensive list of required documents tailored to your category
@@ -129,7 +130,9 @@ const JSKGoldenVisa = () => {
           </li>
         </ul>
 
-        <h3 className="mt-2 text-xl font-medium">3. Application Submission and Follow-up</h3>
+        <h3 className="mt-2 text-xl font-medium">
+          3. Application Submission and Follow-up
+        </h3>
         <ul className="list-inside list-disc">
           <li className="ml-4">
             Handling the entire application process with relevant authorities
@@ -258,7 +261,7 @@ const JSKGoldenVisa = () => {
 
       <section className="mb-8">
         <h2 className="mb-4 text-2xl font-semibold">
-          Why Choose JSK Asset Management for Your Golden Visa Journey?
+          Why Choose JSK for Your Golden Visa Journey?
         </h2>
         <ul className="list-inside list-disc">
           <li className="ml-4">
@@ -289,13 +292,13 @@ const JSKGoldenVisa = () => {
       </section>
 
       <p className="mt-4 text-gray-800">
-        At JSK Asset Management, we understand that obtaining a Golden Visa is
-        more than just a legal process—it&apos;s a gateway to new opportunities
-        and a brighter future in the UAE. Our dedicated team is committed to
-        guiding you through every step of this journey, ensuring a smooth
-        transition to your new life as a long-term UAE resident. With our
-        expertise and personalized approach, your path to the Golden Visa
-        becomes clear, efficient, and rewarding.
+        At JSK, we understand that obtaining a Golden Visa is more than just a
+        legal process—it&apos;s a gateway to new opportunities and a brighter
+        future in the UAE. Our dedicated team is committed to guiding you
+        through every step of this journey, ensuring a smooth transition to your
+        new life as a long-term UAE resident. With our expertise and
+        personalized approach, your path to the Golden Visa becomes clear,
+        efficient, and rewarding.
       </p>
     </div>
   );

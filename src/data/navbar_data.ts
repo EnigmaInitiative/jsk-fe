@@ -41,7 +41,7 @@ export const navbar_data = [
       },
       {
         title: "Business Setup and Licensing",
-        redirect: "/business-setup-licensing",
+        redirect: "/business-setup-license",
       },
       {
         title: "Corporate Advisory",
@@ -52,8 +52,20 @@ export const navbar_data = [
         redirect: "/estate-planning",
       },
       {
+        title: "Financial Consultation",
+        redirect: "/financial-consultation",
+      },
+      {
         title: "Golden Visa",
         redirect: "/golden-visa",
+      },
+      {
+        title: "Legal Consultation",
+        redirect: "/legal-consultation",
+      },
+      {
+        title: "Mortgage Facility",
+        redirect: "/mortgage-facility",
       },
       {
         title: "Rentals and Resale Property",

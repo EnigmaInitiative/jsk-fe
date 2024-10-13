@@ -8,6 +8,7 @@ import { useShowHamburgerStore } from "@/store/store";
 import NavbarButton from "./ui/NavbarButton";
 import { AnimatePresence, motion } from "framer-motion";
 import MobileNavButton from "./ui/MobileNavButton";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -15,6 +16,8 @@ const Navbar = () => {
   const { showHamburger, setShowHamburger } = useShowHamburgerStore();
   const divRef = useRef<HTMLDivElement>(null);
   const [navbarHeight, setNavbarHeight] = useState(0);
+  const pathname = usePathname();
+  const [active, setActive] = useState(0);
 
   const toggleMenu = () => {
     if (showMenu) {
@@ -47,6 +50,18 @@ const Navbar = () => {
     }
   }, [navbarHeight]);
 
+  useEffect(() => {
+    navbar_data.map((item, i) => {
+      if (item.popup[0]?.title !== "") {
+        item.popup.map((subItem) => {
+          if (pathname === subItem.redirect) {
+            setActive(i);
+          }
+        });
+      }
+    });
+  }, [pathname]);
+
   return (
     <div
       className="flex h-full min-h-[10vh] flex-row items-center justify-between border-b-[1px]"
@@ -72,6 +87,7 @@ const Navbar = () => {
                   popup={items.popup}
                   redirect={items.redirect}
                   height={navbarHeight}
+                  active={active === i}
                 />
               );
             })}

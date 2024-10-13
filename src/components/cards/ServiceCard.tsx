@@ -40,7 +40,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         </svg>
       </div>
       <h3 className={`mt-4 truncate text-2xl font-semibold`}>{title}</h3>
-      <p className={`mt-2 text-lg`}>{description}</p>
+      <p className={`mt-2 text-lg text-justify`}>{description}</p>
     </Link>
   );
 };

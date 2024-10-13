@@ -20,7 +20,7 @@ export const HeroCard: React.FC<HeroCard> = ({
         <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-6xl">
           {title}
         </h2>
-        <p className="mb-6 text-gray-600 md:text-lg">{description}</p>
+        <p className="mb-6 text-gray-600 md:text-lg text-justify">{description}</p>
         <button className="rounded-full border-2 border-[#372E97] bg-[#372E97] px-8 py-2 text-white shadow transition duration-300 hover:bg-white hover:text-[#372E97]">
           <a href="#contact">{buttonText}</a>
         </button>

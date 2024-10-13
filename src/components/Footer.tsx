@@ -27,10 +27,8 @@ const Footer = () => {
             <div className="w-full max-w-md">
               <div className="">
                 <div className="table-cell pb-2">
-                  <p>
-                    JSK Portfolio Management Co. L.L.C Unit 18, 18th Floor,
-                    Ontario Tower, Business Bay, Dubai. UAE
-                  </p>
+                  <p>JSK Portfolio Management Co LLC</p>
+                  <p>PO 79998. Dubai. UAE</p>
                 </div>
               </div>
               <div className="table-row">
@@ -39,10 +37,10 @@ const Footer = () => {
                 </div>
                 <div className="table-cell py-2 pl-4">
                   <a
-                    href="mailto:sudeepbhartia@gmail.com"
+                    href="mailto:info@jskamc.com"
                     className="text-blue-600 underline"
                   >
-                    sudeepbhartia@gmail.com
+                    info@jskamc.com
                   </a>
                 </div>
               </div>
@@ -52,10 +50,10 @@ const Footer = () => {
                 </div>
                 <div className="table-cell py-2 pl-4">
                   <a
-                    href="tel:+971565697237"
+                    href="tel:+97144209987"
                     className="text-blue-600 underline"
                   >
-                    +971 56 569 7237
+                    +971 4 420 9987
                   </a>
                 </div>
               </div>
@@ -65,7 +63,7 @@ const Footer = () => {
       </div>
       <div className="w-full">
         <p className="mb-4 text-lg font-[700]">Pages</p>
-        <div className="flex gap-8 md:flex-col flex-col sm:flex-row">
+        <div className="flex flex-col gap-8 sm:flex-row md:flex-col">
           {navbar_data.map((item, i) => (
             <div key={i} className="flex grow flex-col gap-2">
               <FooterButton
@@ -75,7 +73,7 @@ const Footer = () => {
                 className="font-bold"
               />
               {item.popup[0]?.title !== "" && (
-                <div className="flex gap-x-4 flex-col md:flex-row md:flex-wrap">
+                <div className="flex flex-col gap-x-4 md:flex-row md:flex-wrap">
                   {item.popup.map((subItem, j) => (
                     <FooterButton
                       key={j - i}

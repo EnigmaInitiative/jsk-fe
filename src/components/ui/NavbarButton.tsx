@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 import React, { useState } from "react";
 import PopupButton from "./PopupButton";
+import { Popover, PopoverContent, PopoverTrigger } from "./popover";
+import { useRouter } from "next/navigation";
 
 interface PopupItem {
   title: string;
@@ -11,76 +12,44 @@ interface PopupItem {
 interface NavbarButtonProps {
   title: string;
   redirect: string;
-  popup?: PopupItem[];
+  popup: PopupItem[];
   height: number;
+  active: boolean;
 }
 
 const NavbarButton: React.FC<NavbarButtonProps> = (props) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const [isPopupHovered, setIsPopupHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setTimeout(() => {
-      setIsHovered(false);
-    }, 400);
-  };
-
-  const handlePopupMouseEnter = () => {
-    setIsPopupHovered(true);
-  };
-
-  const handlePopupMouseLeave = () => {
-    setTimeout(() => {
-      setIsPopupHovered(false);
-    }, 400);
-  };
-
-  const shouldDisplayPopup = isHovered || isPopupHovered;
+  const router = useRouter();
+  const [open, setOpen] = useState(false);
 
   return (
-    <Link href={props.redirect || ""}>
-      <div
-        className='hover:cursor-pointer relative'
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        <div className='font-poppins'>{props.title}</div>
-        <motion.div
-          className='bottom-0 left-0 w-0 h-[2px] bg-black'
-          style={{ width: isHovered ? "100%" : "0" }}
-          animate={{ width: isHovered ? "100%" : "0" }}
-          transition={{ duration: 0.4 }}
-        ></motion.div>
-        {shouldDisplayPopup && props.popup && props.popup[0]!.title !== "" && (
-          <motion.div
-            className='fixed z-[100] text-white bg-secondary-color hover:cursor-default p-4 -mx-8 '
-            style={{ top: props.height }}
-            onMouseEnter={handlePopupMouseEnter}
-            onMouseLeave={handlePopupMouseLeave}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-          >
-            {props.popup.map((item, i) => (
-              <motion.div
-                key={i}
-                className='min-w-[150px] m-4 h-fit w-fit'
-              >
-                <PopupButton
-                  title={item.title}
-                  redirect={item.redirect}
-                />
-              </motion.div>
-            ))}
-          </motion.div>
-        )}
-      </div>
-    </Link>
+    <Popover open={open} onOpenChange={() => setOpen(!open)}>
+      <PopoverTrigger>
+        <div
+          className={`border-black font-poppins ${props.active && "border-b"}`}
+          onClick={() => props.redirect !== "" && router.push(props.redirect)}
+          onMouseEnter={() => setOpen(true)}
+          onMouseLeave={() => setOpen(false)}
+        >
+          {props.title}
+        </div>
+      </PopoverTrigger>
+      {props.popup[0]?.title && open && (
+        <PopoverContent className="p-0" onMouseEnter={() => setOpen(true)}>
+          {props.popup.map((item, i) => (
+            <motion.div
+              key={i}
+              className="m-4 h-fit w-fit min-w-[150px]"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.4, delay: i * 0.05 }}
+              onClick={() => setOpen(false)}
+            >
+              <PopupButton title={item.title} redirect={item.redirect} />
+            </motion.div>
+          ))}
+        </PopoverContent>
+      )}
+    </Popover>
   );
 };
 

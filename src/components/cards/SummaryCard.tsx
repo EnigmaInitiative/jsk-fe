@@ -30,7 +30,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({
 
       <div className="w-full p-8 md:w-1/2">
         <h2 className="mb-4 text-3xl font-bold md:text-5xl">{title}</h2>
-        <p className="mb-6 text-lg text-gray-600">{description}</p>
+        <p className="mb-6 text-justify text-lg text-gray-600">{description}</p>
         <button className="rounded-full border-2 border-[#372E97] bg-[#372E97] px-6 py-2 text-white shadow transition duration-300 hover:bg-white hover:text-[#372E97]">
           <a href="/JSK Brochure.pdf" target="_blank" rel="noreferrer noopener">
             {buttonText}

@@ -3,26 +3,22 @@ import React from "react";
 
 const AggressivePortfolio: React.FC = () => {
   return (
-    <div className="container mx-auto overflow-x-hidden p-8">
+    <div className="container mx-auto overflow-x-hidden p-8 text-justify">
       <h1 className="mb-6 text-4xl font-bold">Aggressive Portfolio</h1>
 
       <section className="mb-12">
         <h2 className="mb-4 text-2xl font-semibold">Disclaimer</h2>
         <p className="text-gray-800">
-          Century Financial Consultancy LLC (“CFC”) is a Limited Liability
-          Company incorporated under the Laws of UAE and is duly licensed and
-          regulated by the Emirates Securities and Commodities Authority of UAE
-          (SCA). This document is a marketing material and is for informational
+          This document is a marketing material and is for informational
           purposes only and must not be construed to be an advice to invest or
-          otherwise in any investment or financial product. CFC does not
+          otherwise in any investment or financial product. JSK does not
           guarantee as to adequacy, accuracy, completeness or reliability of any
           information or data contained herein and under no circumstances
           whatsoever none of such information or data be construed as an advice
           or trading strategy or recommendation to deal (Buy/Sell) in any
-          investment or financial product. CFC is not responsible or liable for
+          investment or financial product. JSK is not responsible or liable for
           any result, gain or loss, based on this information, in whole or in
-          part. Please carefully read full disclosure mentioned on the last
-          slide of this document.
+          part.
         </p>
         <p className="text-gray-800">Data Source: Bloomberg</p>
       </section>
@@ -205,7 +201,7 @@ const AggressivePortfolio: React.FC = () => {
             width={1000}
             src="/portfolioallocation2.jpeg"
             alt="Portfolio Allocation Chart"
-            className="mx-auto my-6 h-96 w-96"
+            className="mx-auto my-6 h-96 w-96 object-contain"
           />
         </div>
       </section>
@@ -304,17 +300,17 @@ const AggressivePortfolio: React.FC = () => {
         <p className="mb-4 text-gray-800">
           Nvidia has recently introduced its latest AI chip, which is twice as
           powerful as its current generation of GPUs for training AI models and
-          five times more capable for &quot;inference,&quot; which refers to the speed at
-          which AI models like ChatGPT can respond to queries. This chip could
-          command a 40% premium to the H100 chips, which are currently priced
-          between $30,000 to $40,000 each.
+          five times more capable for &quot;inference,&quot; which refers to the
+          speed at which AI models like ChatGPT can respond to queries. This
+          chip could command a 40% premium to the H100 chips, which are
+          currently priced between $30,000 to $40,000 each.
         </p>
         <p className="mb-4 text-gray-800">
           The company’s market capitalization has reached $2.8 trillion,
           surpassing Google and Amazon to become the third most valuable company
-          in the world by market cap, following Microsoft and Apple. Nvidia&apos;s
-          chips have become the cornerstone of the generative AI revolution
-          across the world.
+          in the world by market cap, following Microsoft and Apple.
+          Nvidia&apos;s chips have become the cornerstone of the generative AI
+          revolution across the world.
         </p>
         <p className="mb-4 text-gray-800">
           Companies like Microsoft, OpenAI, and other entities have invested
@@ -331,9 +327,9 @@ const AggressivePortfolio: React.FC = () => {
         </p>
         <p className="mb-4 text-gray-800">
           By integrating its GPUs and quantum software (CUDA-Q) with ORCA&apos;s
-          quantum computers and PSNC&apos;s infrastructure, NVIDIA gains valuable
-          insights into how its technology interacts with real-world quantum
-          systems.
+          quantum computers and PSNC&apos;s infrastructure, NVIDIA gains
+          valuable insights into how its technology interacts with real-world
+          quantum systems.
         </p>
         <p className="mb-4 text-gray-800">
           This early access allows them to optimize and refine their offerings
@@ -345,8 +341,8 @@ const AggressivePortfolio: React.FC = () => {
           By demonstrating the capabilities of its technology in a collaborative
           setting, NVIDIA strengthens its position in this rapidly evolving
           market. If successful, this could lead to new applications and markets
-          for NVIDIA&apos;s technology, expanding their reach and impact. Nvidia is
-          poised to announce its Q2’2025 results by August-end.
+          for NVIDIA&apos;s technology, expanding their reach and impact. Nvidia
+          is poised to announce its Q2’2025 results by August-end.
         </p>
 
         <div className="w-full overflow-x-auto">
@@ -437,9 +433,9 @@ const AggressivePortfolio: React.FC = () => {
           demand for cloud-based AI workloads.
         </p>
         <p className="mb-4 text-gray-800">
-          Spending is likely to &quot;meaningfully increase&quot; from 2023&apos;s $48.4
-          billion. Q1 capital expenditure reached nearly $14 billion, comparable
-          to Microsoft but exceeding Alphabet.
+          Spending is likely to &quot;meaningfully increase&quot; from
+          2023&apos;s $48.4 billion. Q1 capital expenditure reached nearly $14
+          billion, comparable to Microsoft but exceeding Alphabet.
         </p>
         <p className="mb-4 text-gray-800">
           The annual capex is expected to be the highest among public companies,
@@ -453,13 +449,13 @@ const AggressivePortfolio: React.FC = () => {
         <p className="mb-4 text-gray-800">
           Overall, the earnings exceeded analyst expectations, coming in at
           $1.26 per share. However, its revenue growth of 10.1% YoY, totaling
-          $148 billion, fell slightly short of market forecasts. The company&apos;s
-          core online store business saw a slight 5% increase in sales compared
-          to the previous year.
+          $148 billion, fell slightly short of market forecasts. The
+          company&apos;s core online store business saw a slight 5% increase in
+          sales compared to the previous year.
         </p>
         <p className="mb-4 text-gray-800">
-          However, Amazon&apos;s revenue from third-party sellers, including fees and
-          shipping, surged by 12%.
+          However, Amazon&apos;s revenue from third-party sellers, including
+          fees and shipping, surged by 12%.
         </p>
         <p className="mb-4 text-gray-800">
           Its advertising business also performed well, jumping 20% to $12.77
@@ -468,8 +464,8 @@ const AggressivePortfolio: React.FC = () => {
         <p className="mb-4 text-gray-800">
           This division has become a major profit driver for Amazon, expanding
           its reach beyond sponsored product listings to compete with tech
-          giants like Meta and Alphabet. Amazon&apos;s cloud service, AWS, exceeded
-          forecasts with a 19% growth rate.
+          giants like Meta and Alphabet. Amazon&apos;s cloud service, AWS,
+          exceeded forecasts with a 19% growth rate.
         </p>
         <p className="mb-4 text-gray-800">
           These strong performances across multiple segments contributed to a
@@ -597,9 +593,9 @@ const AggressivePortfolio: React.FC = () => {
           expected to grow.
         </p>
         <p className="mb-4 text-gray-800">
-          From a valuation perspective, Microsoft&apos;s P/E ratio is 35.72, slightly
-          below the industry median of 37.66. The company&apos;s ROA is notably
-          strong at 19.13%, compared to the industry median of 5.59%,
+          From a valuation perspective, Microsoft&apos;s P/E ratio is 35.72,
+          slightly below the industry median of 37.66. The company&apos;s ROA is
+          notably strong at 19.13%, compared to the industry median of 5.59%,
           highlighting its strong financial position. Moreover, with the stock
           trading more than 10% below its 52-week high, it presents a compelling
           entry point for investors. This robust economic performance, strategic
@@ -682,12 +678,12 @@ const AggressivePortfolio: React.FC = () => {
           models, featuring various models tailored for specific use cases and
           deployment environments. Indicators suggest these models are aiding
           Alphabet in maintaining its supremacy in the search market, with
-          revenues from the &quot;Google Search & other&quot; segment escalating by 13.8%
-          yearly.
+          revenues from the &quot;Google Search & other&quot; segment escalating
+          by 13.8% yearly.
         </p>
         <p className="mb-4 text-gray-800">
-          Alphabet&apos;s Google Cloud arm achieved a milestone by surpassing $10
-          billion in quarterly revenue for the first time during the second
+          Alphabet&apos;s Google Cloud arm achieved a milestone by surpassing
+          $10 billion in quarterly revenue for the first time during the second
           quarter, generating over $1 billion in operating profit. YouTube
           continues to drive substantial growth, extending its streak as the
           most-viewed streaming platform on U.S. televisions for 17 consecutive
@@ -705,10 +701,10 @@ const AggressivePortfolio: React.FC = () => {
         <p className="mb-4 text-gray-800">
           Reporting a robust revenue of $84.7 billion, a 14% increase from the
           corresponding period in 2023, Alphabet saw net income surge to $24.3
-          billion, marking a 29% rise from the previous year&apos;s second quarter.
-          This growth resulted in a profit margin of 28%, up from 25.3% in the
-          second quarter of 2023, primarily driven by increased revenue. The
-          earnings per share (EPS) reached $1.95, up from $1.48 in the same
+          billion, marking a 29% rise from the previous year&apos;s second
+          quarter. This growth resulted in a profit margin of 28%, up from 25.3%
+          in the second quarter of 2023, primarily driven by increased revenue.
+          The earnings per share (EPS) reached $1.95, up from $1.48 in the same
           period in 2023, outperforming analyst expectations by 2.4%.
         </p>
         <p className="mb-4 text-gray-800">
@@ -1052,18 +1048,16 @@ const AggressivePortfolio: React.FC = () => {
           Testimony of Our Distinction!
         </h2>
         <p className="text-gray-800">
-          The material contained in this presentation/document is the property
-          of Century Financial Consultancy LLC and no unauthorized copying,
-          duplication or distribution is permitted. Rights protected 2019.
-          Century Financial Consultancy LLC is regulated by SCA. Please
-          carefully read full disclosure mentioned on the last slide of this
-          document. Distribution of this publication does not oblige CFC to
-          enter into any transaction. The information in this document is not
-          intended, by itself, to constitute independent, impartial or objective
-          research or a recommendation from CFC and should not be treated as
-          such. CFC will not accept liability for any loss or damage, including
-          without limitation to, any loss of profit, which may arise directly or
-          indirectly from use of or reliance on such information.
+          This document is a marketing material and is for informational
+          purposes only and must not be construed to be an advice to invest or
+          otherwise in any investment or financial product. JSK does not
+          guarantee as to adequacy, accuracy, completeness or reliability of any
+          information or data contained herein and under no circumstances
+          whatsoever none of such information or data be construed as an advice
+          or trading strategy or recommendation to deal (Buy/Sell) in any
+          investment or financial product. JSK is not responsible or liable for
+          any result, gain or loss, based on this information, in whole or in
+          part.
         </p>
       </section>
     </div>

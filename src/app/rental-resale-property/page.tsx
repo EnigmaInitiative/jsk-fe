@@ -2,16 +2,14 @@ import React from "react";
 
 const JSKRealEstateInvestments = () => {
   return (
-    <div className="container mx-auto overflow-x-hidden p-8">
-      <h1 className="mb-6 text-4xl font-bold">
-        Maximize Your Real Estate Investments with JSK Asset Management
-      </h1>
+    <div className="container mx-auto overflow-x-hidden p-8 text-justify">
+      <h1 className="mb-6 text-4xl font-bold">Rental & Resale Property</h1>
 
       <p className="mb-4 text-gray-800">
-        In the dynamic UAE real estate market, JSK Asset Management stands as
-        your trusted partner for both rental and resale properties. Our
-        comprehensive approach ensures that your real estate investments not
-        only meet but exceed your financial goals.
+        In the dynamic UAE real estate market, JSK stands as your trusted
+        partner for both rental and resale properties. Our comprehensive
+        approach ensures that your real estate investments not only meet but
+        exceed your financial goals.
       </p>
 
       <section className="mb-8">
@@ -124,9 +122,9 @@ const JSKRealEstateInvestments = () => {
       </section>
 
       <p className="mb-4 text-gray-800">
-        At JSK Asset Management, we understand that each property and investor
-        is unique. That&apos;s why we offer personalized strategies tailored to
-        your specific goals, risk tolerance, and investment horizon. Whether
+        At JSK, we understand that each property and investor is unique.
+        That&apos;s why we offer personalized strategies tailored to your
+        specific goals, risk tolerance, and investment horizon. Whether
         you&apos;re a first-time investor or a seasoned property mogul, our team
         is committed to maximizing the potential of your real estate investments
         in the UAE market.

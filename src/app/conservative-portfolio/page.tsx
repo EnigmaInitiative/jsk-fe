@@ -3,26 +3,22 @@ import React from "react";
 
 const ConservativePortfolio: React.FC = () => {
   return (
-    <div className="container mx-auto p-8">
+    <div className="container mx-auto p-8 text-justify">
       <h1 className="mb-6 text-4xl font-bold">Conservative Portfolio</h1>
 
       <section className="mb-12">
         <h2 className="mb-4 text-2xl font-semibold">Disclaimer</h2>
         <p className="text-gray-800">
-          Century Financial Consultancy LLC (“CFC”) is a Limited Liability
-          Company incorporated under the Laws of UAE and is duly licensed and
-          regulated by the Emirates Securities and Commodities Authority of UAE
-          (SCA). This document is a marketing material and is for informational
+          This document is a marketing material and is for informational
           purposes only and must not be construed to be an advice to invest or
-          otherwise in any investment or financial product. CFC does not
+          otherwise in any investment or financial product. JSK does not
           guarantee as to adequacy, accuracy, completeness or reliability of any
           information or data contained herein and under no circumstances
           whatsoever none of such information or data be construed as an advice
           or trading strategy or recommendation to deal (Buy/Sell) in any
-          investment or financial product. CFC is not responsible or liable for
+          investment or financial product. JSK is not responsible or liable for
           any result, gain or loss, based on this information, in whole or in
-          part. Please carefully read full disclosure mentioned on the last
-          slide of this document.
+          part.
         </p>
         <p className="text-gray-800">Data Source: Bloomberg</p>
       </section>
@@ -135,7 +131,7 @@ const ConservativePortfolio: React.FC = () => {
             width={1000}
             src="/portfolioallocation.jpeg"
             alt="Portfolio Allocation Chart"
-            className="mx-auto my-6 h-96 w-72"
+            className="mx-auto my-6 h-96 w-72 object-contain"
           />
         </div>
       </section>
@@ -654,23 +650,16 @@ const ConservativePortfolio: React.FC = () => {
           Testimony of Our Distinction!
         </h2>
         <p className="text-gray-800">
-          The material contained in this presentation/document is the property
-          of Century Financial Consultancy LLC and no unauthorized copying,
-          duplication or distribution is permitted. Rights protected 2019.
-          Century Financial Consultancy LLC is regulated by SCA.
-        </p>
-        <p className="text-gray-800">
-          Please carefully read full disclosure mentioned on the last slide of
-          this document. Distribution of this publication does not oblige CFC to
-          enter into any transaction. The information in this document is not
-          intended, by itself, to constitute independent, impartial or objective
-          research or a recommendation from CFC and should not be treated as
-          such.
-        </p>
-        <p className="text-gray-800">
-          CFC will not accept liability for any loss or damage, including
-          without limitation to, any loss of profit, which may arise directly or
-          indirectly from use of or reliance on such information.
+          This document is a marketing material and is for informational
+          purposes only and must not be construed to be an advice to invest or
+          otherwise in any investment or financial product. JSK does not
+          guarantee as to adequacy, accuracy, completeness or reliability of any
+          information or data contained herein and under no circumstances
+          whatsoever none of such information or data be construed as an advice
+          or trading strategy or recommendation to deal (Buy/Sell) in any
+          investment or financial product. JSK is not responsible or liable for
+          any result, gain or loss, based on this information, in whole or in
+          part.
         </p>
       </section>
     </div>

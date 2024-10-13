@@ -2,17 +2,15 @@ import React from "react";
 
 const JSKCorporateAdvisory = () => {
   return (
-    <div className="container mx-auto overflow-x-hidden p-8">
-      <h1 className="mb-6 text-4xl font-bold">
-        Strategic Guidance for Business Excellence with JSK Asset Management
-      </h1>
+    <div className="container mx-auto overflow-x-hidden p-8 text-justify">
+      <h1 className="mb-6 text-4xl font-bold">Corporate Advisory</h1>
 
       <p className="mb-4 text-gray-800">
         In today&apos;s rapidly evolving business landscape, having a trusted
-        advisor can make the difference between success and stagnation. JSK
-        Asset Management&apos;s Corporate Advisory services provide the
-        strategic insights and expertise you need to navigate complex business
-        challenges and seize opportunities for growth.
+        advisor can make the difference between success and stagnation.
+        JSK&apos;s Corporate Advisory services provide the strategic insights
+        and expertise you need to navigate complex business challenges and seize
+        opportunities for growth.
       </p>
 
       <section className="mb-8">
@@ -48,7 +46,9 @@ const JSKCorporateAdvisory = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="mb-4 text-2xl font-semibold">Business Expansion Strategies</h2>
+        <h2 className="mb-4 text-2xl font-semibold">
+          Business Expansion Strategies
+        </h2>
         <p className="mb-4 text-gray-800">
           Fuel your company&apos;s growth with our tailored expansion
           strategies:
@@ -182,7 +182,9 @@ const JSKCorporateAdvisory = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="mb-4 text-2xl font-semibold">Industry-Specific Expertise</h2>
+        <h2 className="mb-4 text-2xl font-semibold">
+          Industry-Specific Expertise
+        </h2>
         <p className="mb-4 text-gray-800">
           Our advisory services span across various industries, including:
         </p>
@@ -197,12 +199,12 @@ const JSKCorporateAdvisory = () => {
       </section>
 
       <p className="mb-4 text-gray-800">
-        At JSK Asset Management, we understand that each business faces unique
-        challenges and opportunities. Our team of experienced advisors works
-        closely with you to develop tailored solutions that align with your
-        vision and drive sustainable growth. We combine deep industry knowledge
-        with strategic insight to help you make informed decisions and achieve
-        your business objectives in the competitive UAE market and beyond.
+        At JSK, we understand that each business faces unique challenges and
+        opportunities. Our team of experienced advisors works closely with you
+        to develop tailored solutions that align with your vision and drive
+        sustainable growth. We combine deep industry knowledge with strategic
+        insight to help you make informed decisions and achieve your business
+        objectives in the competitive UAE market and beyond.
       </p>
     </div>
   );

@@ -41,7 +41,7 @@ export const navbar_data = [
       },
       {
         title: "Business Setup and Licensing",
-        redirect: "/business-setup-license",
+        redirect: "/business-setup-licensing",
       },
       {
         title: "Corporate Advisory",

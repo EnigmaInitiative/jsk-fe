@@ -75,13 +75,13 @@ export const services: Service[] = [
     icon: PiggyBank,
     redirect: "/conservative-portfolio",
   },
-  {
-    title: "Corporate Advisory",
-    description:
-      "We offer expert corporate advisory services, providing insights and solutions to optimize your business strategy and drive sustainable growth.",
-    icon: Briefcase,
-    redirect: "/corporate-advisory",
-  },
+  // {
+  //   title: "Corporate Advisory",
+  //   description:
+  //     "We offer expert corporate advisory services, providing insights and solutions to optimize your business strategy and drive sustainable growth.",
+  //   icon: Briefcase,
+  //   redirect: "/corporate-advisory",
+  // },
   // {
   //   title: "Diverse Investment Portfolios",
   //   description:
@@ -91,13 +91,13 @@ export const services: Service[] = [
   //   textColor: "text-gray-900",
   //   maxwidth: "lg:max-w-[30rem]",
   // },
-  {
-    title: "Estate Planning",
-    description:
-      "Ensure your legacy is protected and efficiently transferred with our estate planning services, covering wills, trusts, and wealth transfer strategies.",
-    icon: ClipboardCheck,
-    redirect: "/estate-planning",
-  },
+  // {
+  //   title: "Estate Planning",
+  //   description:
+  //     "Ensure your legacy is protected and efficiently transferred with our estate planning services, covering wills, trusts, and wealth transfer strategies.",
+  //   icon: ClipboardCheck,
+  //   redirect: "/estate-planning",
+  // },
   // {
   //   title: "Fund Management",
   //   description:
@@ -138,11 +138,11 @@ export const services: Service[] = [
   //   maxwidth: "lg:max-w-[16rem]",
   // },
   {
-    title: "Rental and Resale Property",
+    title: "Property Investment",
     description:
-      "Our rental and resale property services ensure that your real estate investments in the UAE are efficiently managed, maximizing returns through strategic leasing and resale strategies.",
+      "Our property investment services ensure that your real estate investments in the UAE are efficiently managed, maximizing returns through strategic leasing and resale strategies.",
     icon: Home,
-    redirect: "/rental-resale-property",
+    redirect: "/property-investment",
   },
 ];
 

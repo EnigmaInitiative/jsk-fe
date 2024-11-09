@@ -43,14 +43,14 @@ export const navbar_data = [
         title: "Business Setup and Licensing",
         redirect: "/business-setup-licensing",
       },
-      {
-        title: "Corporate Advisory",
-        redirect: "/corporate-advisory",
-      },
-      {
-        title: "Estate Planning",
-        redirect: "/estate-planning",
-      },
+      // {
+      //   title: "Corporate Advisory",
+      //   redirect: "/corporate-advisory",
+      // },
+      // {
+      //   title: "Estate Planning",
+      //   redirect: "/estate-planning",
+      // },
       {
         title: "Financial Consultation",
         redirect: "/financial-consultation",
@@ -59,17 +59,17 @@ export const navbar_data = [
         title: "Golden Visa",
         redirect: "/golden-visa",
       },
-      {
-        title: "Legal Consultation",
-        redirect: "/legal-consultation",
-      },
+      // {
+      //   title: "Legal Consultation",
+      //   redirect: "/legal-consultation",
+      // },
       {
         title: "Mortgage Facility",
         redirect: "/mortgage-facility",
       },
       {
-        title: "Rentals and Resale Property",
-        redirect: "/rental-resale-property",
+        title: "Property Investment",
+        redirect: "/property-investment",
       },
     ],
   },

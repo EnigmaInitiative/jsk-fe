@@ -3,7 +3,7 @@ import React from "react";
 const JSKRealEstateInvestments = () => {
   return (
     <div className="container mx-auto overflow-x-hidden p-8 text-justify">
-      <h1 className="mb-6 text-4xl font-bold">Rental & Resale Property</h1>
+      <h1 className="mb-6 text-4xl font-bold">Property Investment</h1>
 
       <p className="mb-4 text-gray-800">
         In the dynamic UAE real estate market, JSK stands as your trusted
